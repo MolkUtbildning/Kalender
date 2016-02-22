@@ -12,7 +12,7 @@ class Dag17 {
                     "Lucka 17", JOptionPane.INFORMATION_MESSAGE, ikon);
 
             while (true) {
-                String rader = JOptionPane.showInputDialog(Index.getInstance(), "Ange hur många gångertabeller du vill visa:");
+                String rader = JOptionPane.showInputDialog(Index.getInstance(), "Ange hur många gångertabeller du vill visa (Ej decimaler, bara heltal):");
                 String tabell = "";
                 
                 if (rader == null)
