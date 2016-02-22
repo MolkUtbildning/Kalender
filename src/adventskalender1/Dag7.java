@@ -1,19 +1,25 @@
-package adventskalender1;
+﻿package adventskalender1;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 class Dag7 {
+
+
     public static void Lucka7 () {
-        {   ImageIcon ikon = new ImageIcon(Dag7.class.getResource("/adventskalender1/julgran.png"));
-            String s = Calendar.getInstance().getTime().toString(); int i = s.indexOf(':');
-            JOptionPane.showMessageDialog(null, "07 December\nKlockan är:" + s.substring(i - 2, i + 6), "Lucka 07", JOptionPane.INFORMATION_MESSAGE, ikon); }
+<<<<<<< HEAD
+        String timeStamp = new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime());
 
 
-
+        ImageIcon ikon = new ImageIcon(Dag7.class.getResource("/adventskalender1/julgran.png"));
+        JOptionPane.showMessageDialog(Index.getInstance(), "07 December\nKlockan är: " + timeStamp,
+                "Lucka 07", JOptionPane.INFORMATION_MESSAGE, ikon);
 
     }
 
+    }
 
 }

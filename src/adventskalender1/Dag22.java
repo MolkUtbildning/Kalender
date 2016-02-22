@@ -25,23 +25,34 @@ class Dag22 {
                 String tree = "";
                 int treeSize = Integer.parseInt(s);
 
-                for (int i = 0; i < treeSize; i++) {
-                    int loopCount = 0;
-                    
-                    for (int j = 0; j < treeSize - i; j++) {
-                        tree = tree + "  ";
+                if (Integer.parseInt(s) > 40) {
+                    JOptionPane.showMessageDialog(Index.getInstance(), "Talet är för stort!");
+
+                }
+                else
+                {
+                    for (int i = 0; i < treeSize; i++) {
+                        int loopCount = 0;
+
+                        for (int j = 0; j < treeSize - i; j++) {
+                            System.out.println("TreeSize: " + treeSize);
+                            tree = tree + "  ";
+                        }
+
+                        while (loopCount < 2 * i + 1) {
+                            tree = tree + "+";
+                            loopCount++;
+                        }
+                        tree = tree + "\n";
                     }
-                    
-                    while (loopCount < 2 * i + 1) {
-                        tree = tree + "+";
-                        loopCount++;
-                    }
-                    tree = tree + "\n";
+
+                    JLabel label = new JLabel();
+                    label.setForeground(Color.GREEN);
+                    JOptionPane.showMessageDialog(Index.getInstance(), tree);
                 }
 
-                JLabel label = new JLabel();
-                label.setForeground(Color.GREEN);
-                JOptionPane.showMessageDialog(Index.getInstance(), tree);
+
+
                 
             } catch (HeadlessException | NumberFormatException e) {
                 JOptionPane.showMessageDialog(Index.getInstance(), "Felaktig inmatning!");
