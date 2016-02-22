@@ -6,17 +6,14 @@ import javax.swing.JOptionPane;
 
 class Dag7 {
     public static void Lucka7 () {
-        ImageIcon ikon = new ImageIcon(Dag7.class.getResource("/adventskalender1/julgran.png"));
-        JOptionPane.showMessageDialog(Index.getInstance(), "07 December\nKlockan är:",
-                "Lucka 07", JOptionPane.INFORMATION_MESSAGE, ikon);
-        
-        visatid();
+        {   ImageIcon ikon = new ImageIcon(Dag7.class.getResource("/adventskalender1/julgran.png"));
+            String s = Calendar.getInstance().getTime().toString(); int i = s.indexOf(':');
+            JOptionPane.showMessageDialog(null, "07 December\nKlockan är:" + s.substring(i - 2, i + 6), "Lucka 07", JOptionPane.INFORMATION_MESSAGE, ikon); }
+
+
+
+
     }
 
-    public static void visatid () {
-        String s = Calendar.getInstance().getTime().toString();
-        int i = s.indexOf(':');
-        
-        JOptionPane.showMessageDialog(Index.getInstance(), s.substring(i - 2, i + 6));
-    }
+
 }
