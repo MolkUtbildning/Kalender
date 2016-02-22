@@ -8,7 +8,7 @@ class Dag9 {
         ImageIcon ikon = new ImageIcon(Dag9.class.getResource("/adventskalender1/julgran.png"));
         
         JOptionPane.showMessageDialog(Index.getInstance(), "9 December\n Idag ska vi titta på om det är billigare att köpa "
-                + "årskort eller biljett?", "Lucka 9", JOptionPane.INFORMATION_MESSAGE, ikon);
+                + "årskort eller biljett på ditt träningscenter.", "Lucka 9", JOptionPane.INFORMATION_MESSAGE, ikon);
         
         double årskort = 0;
         double biljett = 0;

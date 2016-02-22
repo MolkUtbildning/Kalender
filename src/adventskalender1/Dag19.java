@@ -18,8 +18,8 @@ class Dag19 {
                     break;
                 
                 int i, j;
-                
-                for (i = 0, j = s.length()-1; i<j && s.charAt(i) == s.charAt(j); i++, j--); // en tom sats
+
+                for (i = 0, j = s.toLowerCase().length()-1; i<j && s.toLowerCase().charAt(i) == s.toLowerCase().charAt(j); i++, j--); // en tom sats
                 
                 if (i >= j)
                     JOptionPane.showMessageDialog(Index.getInstance(), "Ditt ord är ett Palindrom");

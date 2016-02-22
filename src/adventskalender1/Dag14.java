@@ -12,7 +12,7 @@ class Dag14 {
 
         while (true) {
             try {
-                String s = JOptionPane.showInputDialog(Index.getInstance(), "Ange ett tal som du vill räkna: ");
+                String s = JOptionPane.showInputDialog(Index.getInstance(), "Ange en uträkning: ");
 
                 if (s == null) {
                     JOptionPane.showMessageDialog(Index.getInstance(), "Programmet avslutat");
