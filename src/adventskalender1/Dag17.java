@@ -22,8 +22,14 @@ class Dag17 {
                 
                 if (rader == null)
                     break;
+
                 
                 int rad = Integer.parseInt(rader);
+
+                if (rad > 170) {
+                    JOptionPane.showMessageDialog(Index.getInstance(), "Värdet är för högt!");
+                    break;
+                }
 
                 for (int i = 1; i <= rad; i++) {
                     for (int x = 1; x <= i; x++) {
